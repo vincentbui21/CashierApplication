@@ -52,7 +52,6 @@
     <Compile Include="Admin_form.Designer.cs">
       <DependentUpon>Admin_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="display.cs" />
     <Compile Include="Loading_form.cs">
       <SubType>Form</SubType>
     </Compile>
