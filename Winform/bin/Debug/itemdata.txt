@@ -1,0 +1,15 @@
+RICE;10;Discontinue
+NOODLE;20;On Sale
+MILK;12;Discontinue
+MACARONI;15;On Sale
+CORN;7;On Sale
+COFFEE;5;On Sale
+TEA;5;On Sale
+SOY SAUCE;9;On Sale
+FISH;15;On Sale
+BEEF;19;On Sale
+TOMATOES;6;Discontinue
+BEER;7;On Sale
+GUITAR;450;On Sale
+SUGAR;7;Discontinue
+WATER;3;On Sale
