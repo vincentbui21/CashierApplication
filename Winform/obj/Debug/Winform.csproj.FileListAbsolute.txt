@@ -30,3 +30,16 @@ C:\Users\anika\Desktop\git-basics\cashier\CashierAppp\Winform\obj\Debug\Winform.
 C:\Users\anika\Desktop\git-basics\cashier\CashierAppp\Winform\obj\Debug\Winform.csproj.CoreCompileInputs.cache
 C:\Users\anika\Desktop\git-basics\cashier\CashierAppp\Winform\obj\Debug\Winform.exe
 C:\Users\anika\Desktop\git-basics\cashier\CashierAppp\Winform\obj\Debug\Winform.pdb
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.csproj.AssemblyReference.cache
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.csproj.SuggestedBindingRedirects.cache
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.Admin_form.resources
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.Loading_form.resources
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.Login_form.resources
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.pay_form.resources
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.Product_management.resources
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.Properties.Resources.resources
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.Sale_form.resources
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.csproj.GenerateResource.cache
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.csproj.CoreCompileInputs.cache
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.exe
+C:\Users\anika\Desktop\Cashier App\CashierApplication\Winform\obj\Debug\Winform.pdb
