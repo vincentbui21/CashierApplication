@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Winform
 {
@@ -53,6 +54,10 @@ namespace Winform
             NavPanel_lbl.Height = Analytics_btn.Height;
             NavPanel_lbl.Top = Analytics_btn.Top;
             Analytics_btn.BackColor = Color.FromArgb(240, 128, 128);
+            Analytics f3 = new Analytics();
+            this.Hide();
+            f3.ShowDialog();
+            this.Show();
         }
 
         private void Sales_btn_Click(object sender, EventArgs e)
@@ -60,6 +65,10 @@ namespace Winform
             NavPanel_lbl.Height = Sales_btn.Height;
             NavPanel_lbl.Top = Sales_btn.Top;
             Sales_btn.BackColor = Color.FromArgb(240, 128, 128);
+                Sales_Report f2 = new Sales_Report();
+                this.Hide();
+                f2.ShowDialog();
+                this.Show();
         }
 
         private void Income_btn_Click(object sender, EventArgs e)
@@ -67,6 +76,10 @@ namespace Winform
             NavPanel_lbl.Height = Income_btn.Height;
             NavPanel_lbl.Top = Income_btn.Top;
             Income_btn.BackColor = Color.FromArgb(240, 128, 128);
+            Income f5 = new Income();
+            this.Hide();
+            f5.ShowDialog();
+            this.Show();
         }
 
         private void Expenditure_btn_Click(object sender, EventArgs e)
@@ -81,6 +94,10 @@ namespace Winform
             NavPanel_lbl.Height = Inventory_btn.Height;
             NavPanel_lbl.Top = Inventory_btn.Top;
             Inventory_btn.BackColor = Color.FromArgb(240, 128, 128);
+            Inventory f4 = new Inventory();
+            this.Hide();
+            f4.ShowDialog();
+            this.Show();
         }
 
         private void Settings_btn_Click(object sender, EventArgs e)
