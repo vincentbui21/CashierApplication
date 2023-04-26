@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Winform
 {
@@ -102,67 +101,19 @@ namespace Winform
                 product_list_cbb.Text = "Choose here";
                 price_lbl.Text = "";
             }
-            // Create a new Excel Application object
-            Excel.Application xlApp = new Excel.Application();
-
-            if (xlApp == null)
-            {
-                MessageBox.Show("Excel is not properly installed on this computer!");
-                return;
-            }
-
-            // Set Excel to be visible (for debugging purposes)
-            xlApp.Visible = true;
-
-            // Create a new Workbook object
-            Excel.Workbook xlWorkbook = xlApp.Workbooks.Add();
-
-            // Create a new Worksheet object
-            Excel.Worksheet xlWorksheet = (Excel.Worksheet)xlWorkbook.Worksheets.Add();
-
-            // Set the worksheet name
-            xlWorksheet.Name = "Product Data";
-
-            // Loop through each row in the ListView
-            for (int i = 0; i < Product_lsv.Items.Count; i++)
-            {
-                // Loop through each column in the ListView and write the data to the worksheet
-                for (int j = 0; j < Product_lsv.Columns.Count; j++)
-                {
-                    xlWorksheet.Cells[i + 1, j + 1] = Product_lsv.Items[i].SubItems[j].Text;
-                }
-            }
-
-            // Save the Excel file
-            xlWorkbook.SaveAs("ProductData.xlsx");
-
-            // Close the workbook and Excel application objects
-            xlWorkbook.Close();
-            xlApp.Quit();
-
-            // Release the Excel objects from memory
-            System.Runtime.InteropServices.Marshal.ReleaseComObject(xlWorksheet);
-            System.Runtime.InteropServices.Marshal.ReleaseComObject(xlWorkbook);
-            System.Runtime.InteropServices.Marshal.ReleaseComObject(xlApp);
-
-            MessageBox.Show("Product data has been saved to ProductData.xlsx");
-        }
-
 
     }
-}
 
-
-     /* private void button2_Click(object sender, EventArgs e)//Delete item
-       {
-        //Delete chosen product
-        foreach (ListViewItem item in Product_lsv.Items)
-                    if (item.Selected)
-                    {
-                        tempTotal_lbl.Text = (Convert.ToDecimal(tempTotal_lbl.Text) - Convert.ToDecimal(item.SubItems[2].Text)).ToString();
-                        Product_lsv.Items.Remove(item);
-                    }                                       
-       }
+        private void delete_btn_Click(object sender, EventArgs e)
+        {
+            //Delete chosen product
+            foreach (ListViewItem item in Product_lsv.Items)
+                if (item.Selected)
+                {
+                    tempTotal_lbl.Text = (Convert.ToDecimal(tempTotal_lbl.Text) - Convert.ToDecimal(item.SubItems[2].Text)).ToString();
+                    Product_lsv.Items.Remove(item);
+                }
+        }
 
         private void button1_Click(object sender, EventArgs e)//pay
         {
@@ -171,7 +122,7 @@ namespace Winform
 
 
             decimal pay = Convert.ToDecimal(tempTotal_lbl.Text);
-            if(pay==0)
+            if (pay == 0)
             {
                 MessageBox.Show("You have not bought anything to pay", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -182,12 +133,13 @@ namespace Winform
                 form.ShowDialog();
                 this.Show();
             }
-            
+
         }
-        private void timer1_Tick(object sender, EventArgs e)//display time
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
             time_lbl.Text = DateTime.Now.ToString();
-        }      
+        }
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)//update price 
         {
@@ -206,6 +158,9 @@ namespace Winform
             }
             sr.Close();
         }
-       
     }
-}*/
+
+
+        
+       
+}
