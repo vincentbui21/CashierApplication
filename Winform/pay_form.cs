@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,7 @@ namespace Winform
 
         private void pay_form_Load(object sender, EventArgs e)
         {
-            total_lbl.Text= total_price.ToString();
+            total_lbl.Text = total_price.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -95,7 +96,7 @@ namespace Winform
             {
                 s = s.Substring(0, s.Length - 1);
             }
-            else 
+            else
             {
                 s = "";
             }
@@ -104,7 +105,7 @@ namespace Winform
 
         private void cash_lbl_TextChanged(object sender, EventArgs e)
         {
-            if(cash_lbl.Text.Length > 0)
+            if (cash_lbl.Text.Length > 0)
             {
                 decimal change = (Convert.ToDecimal(cash_lbl.Text) - Convert.ToDecimal(total_lbl.Text));
                 if (change >= 0)
@@ -116,7 +117,7 @@ namespace Winform
                     change_lbl.Text = "";
                 }
             }
-            
+
         }
 
         private void cancel_btn_Click(object sender, EventArgs e)
@@ -126,7 +127,7 @@ namespace Winform
 
         private void button_add5_Click(object sender, EventArgs e)
         {
-            if(cash_lbl.Text.Length== 0)
+            if (cash_lbl.Text.Length == 0)
             {
                 cash_lbl.Text = (5).ToString();
             }
@@ -217,18 +218,19 @@ namespace Winform
 
         private void button21_Click(object sender, EventArgs e)//Enter button
         {
-            if(change_lbl.Text == "")
+
+            if (change_lbl.Text == "")
             {
                 MessageBox.Show("Payment required!");
             }
             else
-            {             
+            {
                 if (MessageBox.Show("Do you want receipt?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
                 {
 
                 }
             }
-            
+
         }
     }
 }

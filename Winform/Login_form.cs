@@ -95,5 +95,15 @@ namespace Winform
                 tb_Pass.UseSystemPasswordChar = false;
             }
         }
+
+        private void cbb_role_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_UserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

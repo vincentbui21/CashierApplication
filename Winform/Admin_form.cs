@@ -38,7 +38,11 @@ namespace Winform
             }
             else if ((listView1.Items[2].Selected))
             {
-                MessageBox.Show("On progress, please wait!", "Chill out!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                Dashboard f = new Dashboard();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+
             }
         }
     }

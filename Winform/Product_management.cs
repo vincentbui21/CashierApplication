@@ -260,5 +260,10 @@ namespace Winform
         {
             DragDrop_pnl.BackColor = Color.LightCoral;
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
