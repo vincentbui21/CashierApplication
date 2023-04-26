@@ -149,5 +149,15 @@ namespace Winform
             }
             sr.Close();
         }
+
+        private void sale_name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Product_lsv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -230,5 +230,10 @@ namespace Winform
             }
             
         }
+
+        private void cash_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

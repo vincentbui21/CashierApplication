@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Winform
 {
@@ -23,6 +24,7 @@ namespace Winform
             this.Hide();
             f1.ShowDialog();
             this.Show();
+            StringReader reader = new StringReader(@"C:\Users\edark\source\repos\Cash_Register\CashierApplication\Winform\bin\Debug\itemdata.txt");
         }
     }
 }

@@ -29,40 +29,38 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.Yearly = new System.Windows.Forms.Label();
-            this.YearlySales = new System.Windows.Forms.Label();
-            this.YSdescription = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.MSdescription = new System.Windows.Forms.Label();
-            this.MonthlySales = new System.Windows.Forms.Label();
-            this.Monthly = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.WSdescription = new System.Windows.Forms.Label();
-            this.WeeklySales = new System.Windows.Forms.Label();
-            this.Weekly = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.TotalSales_lbl = new System.Windows.Forms.Label();
+            this.ItemName = new System.Windows.Forms.Label();
+            this.pricebox = new System.Windows.Forms.Label();
+            this.Qtysold = new System.Windows.Forms.Label();
+            this.Filter_btn = new System.Windows.Forms.Button();
+            this.ToDate = new System.Windows.Forms.Label();
+            this.fromDate = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel5 = new System.Windows.Forms.Panel();
             this.DSdescription = new System.Windows.Forms.Label();
             this.DailySales = new System.Windows.Forms.Label();
             this.Daily = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.fromDate = new System.Windows.Forms.Label();
-            this.ToDate = new System.Windows.Forms.Label();
-            this.Filter_btn = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.ItemName = new System.Windows.Forms.Label();
-            this.TotalSales = new System.Windows.Forms.Label();
-            this.pricebox = new System.Windows.Forms.Label();
-            this.qtyBox = new System.Windows.Forms.Label();
-            this.QTYleft = new System.Windows.Forms.Label();
-            this.RemainingValue = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.WSdescription = new System.Windows.Forms.Label();
+            this.WeeklySales = new System.Windows.Forms.Label();
+            this.Weekly = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.MSdescription = new System.Windows.Forms.Label();
+            this.MonthlySales = new System.Windows.Forms.Label();
+            this.Monthly = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.YSdescription = new System.Windows.Forms.Label();
+            this.YearlySales = new System.Windows.Forms.Label();
+            this.Yearly = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,137 +81,122 @@
             this.panel1.Size = new System.Drawing.Size(809, 462);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // tableLayoutPanel1
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel2.Controls.Add(this.YSdescription);
-            this.panel2.Controls.Add(this.YearlySales);
-            this.panel2.Controls.Add(this.Yearly);
-            this.panel2.Location = new System.Drawing.Point(34, 34);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(164, 100);
-            this.panel2.TabIndex = 0;
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.TotalSales_lbl, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pricebox, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Qtysold, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ItemName, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(60, 257);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.37762F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.62238F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(613, 146);
+            this.tableLayoutPanel1.TabIndex = 5;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // Yearly
+            // TotalSales_lbl
             // 
-            this.Yearly.AutoSize = true;
-            this.Yearly.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Yearly.ForeColor = System.Drawing.Color.LightCoral;
-            this.Yearly.Location = new System.Drawing.Point(19, 9);
-            this.Yearly.Name = "Yearly";
-            this.Yearly.Size = new System.Drawing.Size(125, 24);
-            this.Yearly.TabIndex = 0;
-            this.Yearly.Text = "Yearly Sales";
+            this.TotalSales_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TotalSales_lbl.AutoSize = true;
+            this.TotalSales_lbl.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalSales_lbl.Location = new System.Drawing.Point(362, 17);
+            this.TotalSales_lbl.Name = "TotalSales_lbl";
+            this.TotalSales_lbl.Size = new System.Drawing.Size(248, 15);
+            this.TotalSales_lbl.TabIndex = 0;
+            this.TotalSales_lbl.Text = "Total Sales";
             // 
-            // YearlySales
+            // ItemName
             // 
-            this.YearlySales.AutoSize = true;
-            this.YearlySales.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.YearlySales.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.YearlySales.Location = new System.Drawing.Point(51, 33);
-            this.YearlySales.Name = "YearlySales";
-            this.YearlySales.Size = new System.Drawing.Size(67, 25);
-            this.YearlySales.TabIndex = 0;
-            this.YearlySales.Text = "$1234";
+            this.ItemName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ItemName.AutoSize = true;
+            this.ItemName.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ItemName.Location = new System.Drawing.Point(3, 17);
+            this.ItemName.Name = "ItemName";
+            this.ItemName.Size = new System.Drawing.Size(248, 15);
+            this.ItemName.TabIndex = 0;
+            this.ItemName.Text = "Item Description";
             // 
-            // YSdescription
+            // pricebox
             // 
-            this.YSdescription.AutoSize = true;
-            this.YSdescription.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.YSdescription.ForeColor = System.Drawing.Color.White;
-            this.YSdescription.Location = new System.Drawing.Point(23, 70);
-            this.YSdescription.Name = "YSdescription";
-            this.YSdescription.Size = new System.Drawing.Size(121, 30);
-            this.YSdescription.TabIndex = 0;
-            this.YSdescription.Text = "Showing sales figures\r\n as at today.";
+            this.pricebox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pricebox.AutoSize = true;
+            this.pricebox.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricebox.Location = new System.Drawing.Point(307, 17);
+            this.pricebox.Name = "pricebox";
+            this.pricebox.Size = new System.Drawing.Size(49, 15);
+            this.pricebox.TabIndex = 0;
+            this.pricebox.Text = "Price";
             // 
-            // panel3
+            // Qtysold
             // 
-            this.panel3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel3.Controls.Add(this.MSdescription);
-            this.panel3.Controls.Add(this.MonthlySales);
-            this.panel3.Controls.Add(this.Monthly);
-            this.panel3.Location = new System.Drawing.Point(218, 34);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(164, 100);
-            this.panel3.TabIndex = 0;
+            this.Qtysold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Qtysold.AutoSize = true;
+            this.Qtysold.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Qtysold.Location = new System.Drawing.Point(257, 2);
+            this.Qtysold.Name = "Qtysold";
+            this.Qtysold.Size = new System.Drawing.Size(44, 30);
+            this.Qtysold.TabIndex = 1;
+            this.Qtysold.Text = "Qty Sold";
             // 
-            // MSdescription
+            // Filter_btn
             // 
-            this.MSdescription.AutoSize = true;
-            this.MSdescription.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MSdescription.ForeColor = System.Drawing.Color.White;
-            this.MSdescription.Location = new System.Drawing.Point(20, 70);
-            this.MSdescription.Name = "MSdescription";
-            this.MSdescription.Size = new System.Drawing.Size(121, 30);
-            this.MSdescription.TabIndex = 0;
-            this.MSdescription.Text = "Showing sales figures\r\n as at today.";
+            this.Filter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Filter_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Filter_btn.ForeColor = System.Drawing.Color.DimGray;
+            this.Filter_btn.Location = new System.Drawing.Point(351, 198);
+            this.Filter_btn.Name = "Filter_btn";
+            this.Filter_btn.Size = new System.Drawing.Size(75, 23);
+            this.Filter_btn.TabIndex = 4;
+            this.Filter_btn.Text = "Filter";
+            this.Filter_btn.UseVisualStyleBackColor = true;
             // 
-            // MonthlySales
+            // ToDate
             // 
-            this.MonthlySales.AutoSize = true;
-            this.MonthlySales.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MonthlySales.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.MonthlySales.Location = new System.Drawing.Point(55, 33);
-            this.MonthlySales.Name = "MonthlySales";
-            this.MonthlySales.Size = new System.Drawing.Size(56, 25);
-            this.MonthlySales.TabIndex = 0;
-            this.MonthlySales.Text = "$234";
+            this.ToDate.AutoSize = true;
+            this.ToDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToDate.ForeColor = System.Drawing.Color.DimGray;
+            this.ToDate.Location = new System.Drawing.Point(15, 225);
+            this.ToDate.Name = "ToDate";
+            this.ToDate.Size = new System.Drawing.Size(53, 13);
+            this.ToDate.TabIndex = 3;
+            this.ToDate.Text = "To Date";
             // 
-            // Monthly
+            // fromDate
             // 
-            this.Monthly.AutoSize = true;
-            this.Monthly.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Monthly.ForeColor = System.Drawing.Color.LightCoral;
-            this.Monthly.Location = new System.Drawing.Point(19, 9);
-            this.Monthly.Name = "Monthly";
-            this.Monthly.Size = new System.Drawing.Size(140, 24);
-            this.Monthly.TabIndex = 0;
-            this.Monthly.Text = "Monthly Sales";
+            this.fromDate.AutoSize = true;
+            this.fromDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fromDate.ForeColor = System.Drawing.Color.DimGray;
+            this.fromDate.Location = new System.Drawing.Point(15, 185);
+            this.fromDate.Name = "fromDate";
+            this.fromDate.Size = new System.Drawing.Size(65, 13);
+            this.fromDate.TabIndex = 2;
+            this.fromDate.Text = "From Date";
             // 
-            // panel4
+            // dateTimePicker2
             // 
-            this.panel4.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel4.Controls.Add(this.WSdescription);
-            this.panel4.Controls.Add(this.WeeklySales);
-            this.panel4.Controls.Add(this.Weekly);
-            this.panel4.Location = new System.Drawing.Point(400, 34);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(164, 100);
-            this.panel4.TabIndex = 0;
+            this.dateTimePicker2.Location = new System.Drawing.Point(90, 219);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 1;
             // 
-            // WSdescription
+            // dateTimePicker1
             // 
-            this.WSdescription.AutoSize = true;
-            this.WSdescription.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WSdescription.ForeColor = System.Drawing.Color.White;
-            this.WSdescription.Location = new System.Drawing.Point(20, 70);
-            this.WSdescription.Name = "WSdescription";
-            this.WSdescription.Size = new System.Drawing.Size(121, 30);
-            this.WSdescription.TabIndex = 0;
-            this.WSdescription.Text = "Showing sales figures\r\n as at today.";
-            // 
-            // WeeklySales
-            // 
-            this.WeeklySales.AutoSize = true;
-            this.WeeklySales.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WeeklySales.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.WeeklySales.Location = new System.Drawing.Point(51, 33);
-            this.WeeklySales.Name = "WeeklySales";
-            this.WeeklySales.Size = new System.Drawing.Size(45, 25);
-            this.WeeklySales.TabIndex = 0;
-            this.WeeklySales.Text = "$34";
-            // 
-            // Weekly
-            // 
-            this.Weekly.AutoSize = true;
-            this.Weekly.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Weekly.ForeColor = System.Drawing.Color.LightCoral;
-            this.Weekly.Location = new System.Drawing.Point(19, 9);
-            this.Weekly.Name = "Weekly";
-            this.Weekly.Size = new System.Drawing.Size(135, 24);
-            this.Weekly.TabIndex = 0;
-            this.Weekly.Text = "Weekly Sales";
+            this.dateTimePicker1.Location = new System.Drawing.Point(90, 178);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 1;
             // 
             // panel5
             // 
@@ -259,149 +242,137 @@
             this.Daily.TabIndex = 0;
             this.Daily.Text = "Daily Sales";
             // 
-            // dateTimePicker1
+            // panel4
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(90, 178);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 1;
+            this.panel4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel4.Controls.Add(this.WSdescription);
+            this.panel4.Controls.Add(this.WeeklySales);
+            this.panel4.Controls.Add(this.Weekly);
+            this.panel4.Location = new System.Drawing.Point(400, 34);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(164, 100);
+            this.panel4.TabIndex = 0;
             // 
-            // dateTimePicker2
+            // WSdescription
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(90, 219);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 1;
+            this.WSdescription.AutoSize = true;
+            this.WSdescription.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WSdescription.ForeColor = System.Drawing.Color.White;
+            this.WSdescription.Location = new System.Drawing.Point(20, 70);
+            this.WSdescription.Name = "WSdescription";
+            this.WSdescription.Size = new System.Drawing.Size(121, 30);
+            this.WSdescription.TabIndex = 0;
+            this.WSdescription.Text = "Showing sales figures\r\n as at today.";
             // 
-            // fromDate
+            // WeeklySales
             // 
-            this.fromDate.AutoSize = true;
-            this.fromDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fromDate.ForeColor = System.Drawing.Color.DimGray;
-            this.fromDate.Location = new System.Drawing.Point(15, 185);
-            this.fromDate.Name = "fromDate";
-            this.fromDate.Size = new System.Drawing.Size(65, 13);
-            this.fromDate.TabIndex = 2;
-            this.fromDate.Text = "From Date";
+            this.WeeklySales.AutoSize = true;
+            this.WeeklySales.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeeklySales.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.WeeklySales.Location = new System.Drawing.Point(51, 33);
+            this.WeeklySales.Name = "WeeklySales";
+            this.WeeklySales.Size = new System.Drawing.Size(45, 25);
+            this.WeeklySales.TabIndex = 0;
+            this.WeeklySales.Text = "$34";
             // 
-            // ToDate
+            // Weekly
             // 
-            this.ToDate.AutoSize = true;
-            this.ToDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ToDate.ForeColor = System.Drawing.Color.DimGray;
-            this.ToDate.Location = new System.Drawing.Point(15, 225);
-            this.ToDate.Name = "ToDate";
-            this.ToDate.Size = new System.Drawing.Size(53, 13);
-            this.ToDate.TabIndex = 3;
-            this.ToDate.Text = "To Date";
+            this.Weekly.AutoSize = true;
+            this.Weekly.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Weekly.ForeColor = System.Drawing.Color.LightCoral;
+            this.Weekly.Location = new System.Drawing.Point(19, 9);
+            this.Weekly.Name = "Weekly";
+            this.Weekly.Size = new System.Drawing.Size(135, 24);
+            this.Weekly.TabIndex = 0;
+            this.Weekly.Text = "Weekly Sales";
             // 
-            // Filter_btn
+            // panel3
             // 
-            this.Filter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Filter_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Filter_btn.ForeColor = System.Drawing.Color.DimGray;
-            this.Filter_btn.Location = new System.Drawing.Point(351, 198);
-            this.Filter_btn.Name = "Filter_btn";
-            this.Filter_btn.Size = new System.Drawing.Size(75, 23);
-            this.Filter_btn.TabIndex = 4;
-            this.Filter_btn.Text = "Filter";
-            this.Filter_btn.UseVisualStyleBackColor = true;
+            this.panel3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel3.Controls.Add(this.MSdescription);
+            this.panel3.Controls.Add(this.MonthlySales);
+            this.panel3.Controls.Add(this.Monthly);
+            this.panel3.Location = new System.Drawing.Point(218, 34);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(164, 100);
+            this.panel3.TabIndex = 0;
             // 
-            // tableLayoutPanel1
+            // MSdescription
             // 
-            this.tableLayoutPanel1.ColumnCount = 6;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.TotalSales, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.QTYleft, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.RemainingValue, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ItemName, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pricebox, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.qtyBox, 2, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(60, 257);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.37762F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.62238F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(613, 146);
-            this.tableLayoutPanel1.TabIndex = 5;
+            this.MSdescription.AutoSize = true;
+            this.MSdescription.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MSdescription.ForeColor = System.Drawing.Color.White;
+            this.MSdescription.Location = new System.Drawing.Point(20, 70);
+            this.MSdescription.Name = "MSdescription";
+            this.MSdescription.Size = new System.Drawing.Size(121, 30);
+            this.MSdescription.TabIndex = 0;
+            this.MSdescription.Text = "Showing sales figures\r\n as at today.";
             // 
-            // ItemName
+            // MonthlySales
             // 
-            this.ItemName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ItemName.AutoSize = true;
-            this.ItemName.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ItemName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ItemName.Location = new System.Drawing.Point(3, 17);
-            this.ItemName.Name = "ItemName";
-            this.ItemName.Size = new System.Drawing.Size(119, 15);
-            this.ItemName.TabIndex = 0;
-            this.ItemName.Text = "Item Description";
+            this.MonthlySales.AutoSize = true;
+            this.MonthlySales.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MonthlySales.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.MonthlySales.Location = new System.Drawing.Point(55, 33);
+            this.MonthlySales.Name = "MonthlySales";
+            this.MonthlySales.Size = new System.Drawing.Size(56, 25);
+            this.MonthlySales.TabIndex = 0;
+            this.MonthlySales.Text = "$234";
             // 
-            // TotalSales
+            // Monthly
             // 
-            this.TotalSales.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TotalSales.AutoSize = true;
-            this.TotalSales.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalSales.Location = new System.Drawing.Point(238, 17);
-            this.TotalSales.Name = "TotalSales";
-            this.TotalSales.Size = new System.Drawing.Size(119, 15);
-            this.TotalSales.TabIndex = 0;
-            this.TotalSales.Text = "Total Sales";
+            this.Monthly.AutoSize = true;
+            this.Monthly.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Monthly.ForeColor = System.Drawing.Color.LightCoral;
+            this.Monthly.Location = new System.Drawing.Point(19, 9);
+            this.Monthly.Name = "Monthly";
+            this.Monthly.Size = new System.Drawing.Size(140, 24);
+            this.Monthly.TabIndex = 0;
+            this.Monthly.Text = "Monthly Sales";
             // 
-            // pricebox
+            // panel2
             // 
-            this.pricebox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pricebox.AutoSize = true;
-            this.pricebox.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pricebox.Location = new System.Drawing.Point(128, 17);
-            this.pricebox.Name = "pricebox";
-            this.pricebox.Size = new System.Drawing.Size(49, 15);
-            this.pricebox.TabIndex = 0;
-            this.pricebox.Text = "Price";
+            this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel2.Controls.Add(this.YSdescription);
+            this.panel2.Controls.Add(this.YearlySales);
+            this.panel2.Controls.Add(this.Yearly);
+            this.panel2.Location = new System.Drawing.Point(34, 34);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(164, 100);
+            this.panel2.TabIndex = 0;
             // 
-            // qtyBox
+            // YSdescription
             // 
-            this.qtyBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.qtyBox.AutoSize = true;
-            this.qtyBox.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qtyBox.Location = new System.Drawing.Point(183, 17);
-            this.qtyBox.Name = "qtyBox";
-            this.qtyBox.Size = new System.Drawing.Size(49, 15);
-            this.qtyBox.TabIndex = 0;
-            this.qtyBox.Text = "QTY";
+            this.YSdescription.AutoSize = true;
+            this.YSdescription.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YSdescription.ForeColor = System.Drawing.Color.White;
+            this.YSdescription.Location = new System.Drawing.Point(23, 70);
+            this.YSdescription.Name = "YSdescription";
+            this.YSdescription.Size = new System.Drawing.Size(121, 30);
+            this.YSdescription.TabIndex = 0;
+            this.YSdescription.Text = "Showing sales figures\r\n as at today.";
             // 
-            // QTYleft
+            // YearlySales
             // 
-            this.QTYleft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.QTYleft.AutoSize = true;
-            this.QTYleft.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QTYleft.Location = new System.Drawing.Point(363, 17);
-            this.QTYleft.Name = "QTYleft";
-            this.QTYleft.Size = new System.Drawing.Size(119, 15);
-            this.QTYleft.TabIndex = 0;
-            this.QTYleft.Text = "Qty Remaining";
+            this.YearlySales.AutoSize = true;
+            this.YearlySales.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YearlySales.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.YearlySales.Location = new System.Drawing.Point(51, 33);
+            this.YearlySales.Name = "YearlySales";
+            this.YearlySales.Size = new System.Drawing.Size(67, 25);
+            this.YearlySales.TabIndex = 0;
+            this.YearlySales.Text = "$1234";
             // 
-            // RemainingValue
+            // Yearly
             // 
-            this.RemainingValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RemainingValue.AutoSize = true;
-            this.RemainingValue.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemainingValue.Location = new System.Drawing.Point(488, 17);
-            this.RemainingValue.Name = "RemainingValue";
-            this.RemainingValue.Size = new System.Drawing.Size(122, 15);
-            this.RemainingValue.TabIndex = 0;
-            this.RemainingValue.Text = "Value of Remainder";
+            this.Yearly.AutoSize = true;
+            this.Yearly.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Yearly.ForeColor = System.Drawing.Color.LightCoral;
+            this.Yearly.Location = new System.Drawing.Point(19, 9);
+            this.Yearly.Name = "Yearly";
+            this.Yearly.Size = new System.Drawing.Size(125, 24);
+            this.Yearly.TabIndex = 0;
+            this.Yearly.Text = "Yearly Sales";
             // 
             // Sales_Report
             // 
@@ -411,18 +382,19 @@
             this.Controls.Add(this.panel1);
             this.Name = "Sales_Report";
             this.Text = "Sales_Report";
+            this.Load += new System.EventHandler(this.Sales_Report_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -447,16 +419,14 @@
         private System.Windows.Forms.Label YearlySales;
         private System.Windows.Forms.Label Yearly;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label TotalSales;
-        private System.Windows.Forms.Label QTYleft;
-        private System.Windows.Forms.Label RemainingValue;
+        private System.Windows.Forms.Label TotalSales_lbl;
         private System.Windows.Forms.Label ItemName;
         private System.Windows.Forms.Label pricebox;
-        private System.Windows.Forms.Label qtyBox;
         private System.Windows.Forms.Button Filter_btn;
         private System.Windows.Forms.Label ToDate;
         private System.Windows.Forms.Label fromDate;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label Qtysold;
     }
 }

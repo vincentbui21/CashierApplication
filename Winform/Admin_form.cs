@@ -42,6 +42,7 @@ namespace Winform
                 this.Hide();
                 f.ShowDialog();
                 this.Show();
+
             }
         }
     }

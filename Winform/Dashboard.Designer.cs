@@ -59,20 +59,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Settings_btn = new System.Windows.Forms.Button();
-            this.Inventory_btn = new System.Windows.Forms.Button();
             this.Invoices_btn = new System.Windows.Forms.Button();
-            this.Income_btn = new System.Windows.Forms.Button();
             this.Sales_btn = new System.Windows.Forms.Button();
             this.Analytics_btn = new System.Windows.Forms.Button();
-            this.DashHome_btn = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.ImagePanel_btn = new System.Windows.Forms.Panel();
             this.NavPanel_lbl = new System.Windows.Forms.Panel();
-            this.UserID_btn = new System.Windows.Forms.Label();
             this.User_Name = new System.Windows.Forms.Label();
             this.User_photo = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.user_namebox = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -104,7 +101,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(752, 485);
+            this.panel1.Size = new System.Drawing.Size(752, 488);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -435,19 +432,16 @@
             this.panel2.BackColor = System.Drawing.Color.LightCoral;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.Settings_btn);
-            this.panel2.Controls.Add(this.Inventory_btn);
             this.panel2.Controls.Add(this.Invoices_btn);
-            this.panel2.Controls.Add(this.Income_btn);
             this.panel2.Controls.Add(this.Sales_btn);
             this.panel2.Controls.Add(this.Analytics_btn);
-            this.panel2.Controls.Add(this.DashHome_btn);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(148, 485);
+            this.panel2.Size = new System.Drawing.Size(148, 488);
             this.panel2.TabIndex = 0;
             // 
             // Settings_btn
@@ -467,23 +461,6 @@
             this.Settings_btn.Click += new System.EventHandler(this.Settings_btn_Click);
             this.Settings_btn.Leave += new System.EventHandler(this.Settings_btn_Leave);
             // 
-            // Inventory_btn
-            // 
-            this.Inventory_btn.FlatAppearance.BorderSize = 0;
-            this.Inventory_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Inventory_btn.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Inventory_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(249)))));
-            this.Inventory_btn.Image = ((System.Drawing.Image)(resources.GetObject("Inventory_btn.Image")));
-            this.Inventory_btn.Location = new System.Drawing.Point(-2, 354);
-            this.Inventory_btn.Name = "Inventory_btn";
-            this.Inventory_btn.Size = new System.Drawing.Size(148, 38);
-            this.Inventory_btn.TabIndex = 3;
-            this.Inventory_btn.Text = "Inventory";
-            this.Inventory_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.Inventory_btn.UseVisualStyleBackColor = true;
-            this.Inventory_btn.Click += new System.EventHandler(this.Inventory_btn_Click);
-            this.Inventory_btn.Leave += new System.EventHandler(this.Inventory_btn_Leave);
-            // 
             // Invoices_btn
             // 
             this.Invoices_btn.FlatAppearance.BorderSize = 0;
@@ -501,23 +478,6 @@
             this.Invoices_btn.Click += new System.EventHandler(this.Expenditure_btn_Click);
             this.Invoices_btn.Leave += new System.EventHandler(this.Expenditure_btn_Leave);
             // 
-            // Income_btn
-            // 
-            this.Income_btn.FlatAppearance.BorderSize = 0;
-            this.Income_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Income_btn.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Income_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(249)))));
-            this.Income_btn.Image = ((System.Drawing.Image)(resources.GetObject("Income_btn.Image")));
-            this.Income_btn.Location = new System.Drawing.Point(-2, 262);
-            this.Income_btn.Name = "Income_btn";
-            this.Income_btn.Size = new System.Drawing.Size(148, 38);
-            this.Income_btn.TabIndex = 3;
-            this.Income_btn.Text = "Income";
-            this.Income_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.Income_btn.UseVisualStyleBackColor = true;
-            this.Income_btn.Click += new System.EventHandler(this.Income_btn_Click);
-            this.Income_btn.Leave += new System.EventHandler(this.Income_btn_Leave);
-            // 
             // Sales_btn
             // 
             this.Sales_btn.FlatAppearance.BorderSize = 0;
@@ -525,7 +485,7 @@
             this.Sales_btn.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sales_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(249)))));
             this.Sales_btn.Image = ((System.Drawing.Image)(resources.GetObject("Sales_btn.Image")));
-            this.Sales_btn.Location = new System.Drawing.Point(3, 218);
+            this.Sales_btn.Location = new System.Drawing.Point(0, 230);
             this.Sales_btn.Name = "Sales_btn";
             this.Sales_btn.Size = new System.Drawing.Size(148, 38);
             this.Sales_btn.TabIndex = 3;
@@ -542,7 +502,7 @@
             this.Analytics_btn.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Analytics_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(249)))));
             this.Analytics_btn.Image = global::Winform.Properties.Resources.diagram;
-            this.Analytics_btn.Location = new System.Drawing.Point(1, 174);
+            this.Analytics_btn.Location = new System.Drawing.Point(1, 160);
             this.Analytics_btn.Name = "Analytics_btn";
             this.Analytics_btn.Size = new System.Drawing.Size(148, 38);
             this.Analytics_btn.TabIndex = 3;
@@ -552,30 +512,13 @@
             this.Analytics_btn.Click += new System.EventHandler(this.Analytics_btn_Click);
             this.Analytics_btn.Leave += new System.EventHandler(this.Analytics_btn_Leave);
             // 
-            // DashHome_btn
-            // 
-            this.DashHome_btn.FlatAppearance.BorderSize = 0;
-            this.DashHome_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DashHome_btn.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DashHome_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(249)))));
-            this.DashHome_btn.Image = global::Winform.Properties.Resources.home;
-            this.DashHome_btn.Location = new System.Drawing.Point(-2, 139);
-            this.DashHome_btn.Name = "DashHome_btn";
-            this.DashHome_btn.Size = new System.Drawing.Size(148, 38);
-            this.DashHome_btn.TabIndex = 3;
-            this.DashHome_btn.Text = "Dashboard";
-            this.DashHome_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.DashHome_btn.UseVisualStyleBackColor = true;
-            this.DashHome_btn.Click += new System.EventHandler(this.DashHome_btn_Click);
-            this.DashHome_btn.Leave += new System.EventHandler(this.DashHome_btn_Leave);
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Snow;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.user_namebox);
             this.panel5.Controls.Add(this.ImagePanel_btn);
             this.panel5.Controls.Add(this.NavPanel_lbl);
-            this.panel5.Controls.Add(this.UserID_btn);
             this.panel5.Controls.Add(this.User_Name);
             this.panel5.Controls.Add(this.User_photo);
             this.panel5.Location = new System.Drawing.Point(-2, -2);
@@ -599,22 +542,12 @@
             this.NavPanel_lbl.Size = new System.Drawing.Size(3, 100);
             this.NavPanel_lbl.TabIndex = 2;
             // 
-            // UserID_btn
-            // 
-            this.UserID_btn.AutoSize = true;
-            this.UserID_btn.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserID_btn.Location = new System.Drawing.Point(39, 96);
-            this.UserID_btn.Name = "UserID_btn";
-            this.UserID_btn.Size = new System.Drawing.Size(39, 13);
-            this.UserID_btn.TabIndex = 3;
-            this.UserID_btn.Text = "User ID";
-            // 
             // User_Name
             // 
             this.User_Name.AutoSize = true;
             this.User_Name.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.User_Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(249)))));
-            this.User_Name.Location = new System.Drawing.Point(28, 81);
+            this.User_Name.Location = new System.Drawing.Point(28, 71);
             this.User_Name.Name = "User_Name";
             this.User_Name.Size = new System.Drawing.Size(71, 15);
             this.User_Name.TabIndex = 2;
@@ -649,6 +582,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(84, 10);
             this.panel3.TabIndex = 1;
+            // 
+            // user_namebox
+            // 
+            this.user_namebox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.user_namebox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_namebox.Location = new System.Drawing.Point(18, 86);
+            this.user_namebox.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.user_namebox.Name = "user_namebox";
+            this.user_namebox.Size = new System.Drawing.Size(81, 23);
+            this.user_namebox.TabIndex = 10;
+            this.user_namebox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.user_namebox.Click += new System.EventHandler(this.user_namebox_Click);
             // 
             // Dashboard
             // 
@@ -689,20 +634,16 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button DashHome_btn;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label User_Name;
         private System.Windows.Forms.PictureBox User_photo;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button Settings_btn;
-        private System.Windows.Forms.Button Income_btn;
         private System.Windows.Forms.Button Sales_btn;
         private System.Windows.Forms.Button Analytics_btn;
         private System.Windows.Forms.Panel NavPanel_lbl;
-        private System.Windows.Forms.Label UserID_btn;
         private System.Windows.Forms.Panel ImagePanel_btn;
-        private System.Windows.Forms.Button Inventory_btn;
         private System.Windows.Forms.Button Invoices_btn;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label2;
@@ -731,5 +672,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label user_namebox;
     }
 }

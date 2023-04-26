@@ -32,15 +32,15 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.AnalyticsOption = new System.Windows.Forms.ComboBox();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.Progressbar = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.Filter_btn = new System.Windows.Forms.Button();
             this.ToDate = new System.Windows.Forms.Label();
             this.fromDate = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.Progressbar = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.AnalyticsOption = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +61,56 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(809, 462);
             this.panel1.TabIndex = 1;
+            // 
+            // AnalyticsOption
+            // 
+            this.AnalyticsOption.BackColor = System.Drawing.Color.MistyRose;
+            this.AnalyticsOption.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnalyticsOption.FormattingEnabled = true;
+            this.AnalyticsOption.Items.AddRange(new object[] {
+            "Sales ",
+            "Top Product"});
+            this.AnalyticsOption.Location = new System.Drawing.Point(477, 33);
+            this.AnalyticsOption.Name = "AnalyticsOption";
+            this.AnalyticsOption.Size = new System.Drawing.Size(121, 21);
+            this.AnalyticsOption.TabIndex = 8;
+            this.AnalyticsOption.SelectedIndexChanged += new System.EventHandler(this.AnalyticsOption_SelectedIndexChanged);
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(19, 94);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(718, 281);
+            this.chart1.TabIndex = 7;
+            this.chart1.Text = "chart1";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
+            // 
+            // Progressbar
+            // 
+            this.Progressbar.AutoSize = true;
+            this.Progressbar.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Progressbar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.Progressbar.Location = new System.Drawing.Point(533, 397);
+            this.Progressbar.Name = "Progressbar";
+            this.Progressbar.Size = new System.Drawing.Size(104, 21);
+            this.Progressbar.TabIndex = 6;
+            this.Progressbar.Text = "Progress Bar";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(525, 421);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(267, 23);
+            this.progressBar1.TabIndex = 5;
+            this.progressBar1.Value = 60;
             // 
             // Filter_btn
             // 
@@ -109,52 +159,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(150, 20);
             this.dateTimePicker1.TabIndex = 1;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(525, 421);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(267, 23);
-            this.progressBar1.TabIndex = 5;
-            this.progressBar1.Value = 60;
-            // 
-            // Progressbar
-            // 
-            this.Progressbar.AutoSize = true;
-            this.Progressbar.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Progressbar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.Progressbar.Location = new System.Drawing.Point(533, 397);
-            this.Progressbar.Name = "Progressbar";
-            this.Progressbar.Size = new System.Drawing.Size(104, 21);
-            this.Progressbar.TabIndex = 6;
-            this.Progressbar.Text = "Progress Bar";
-            // 
-            // chart1
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(19, 94);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(718, 281);
-            this.chart1.TabIndex = 7;
-            this.chart1.Text = "chart1";
-            this.chart1.Click += new System.EventHandler(this.chart1_Click);
-            // 
-            // AnalyticsOption
-            // 
-            this.AnalyticsOption.BackColor = System.Drawing.Color.MistyRose;
-            this.AnalyticsOption.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AnalyticsOption.FormattingEnabled = true;
-            this.AnalyticsOption.Location = new System.Drawing.Point(477, 33);
-            this.AnalyticsOption.Name = "AnalyticsOption";
-            this.AnalyticsOption.Size = new System.Drawing.Size(121, 21);
-            this.AnalyticsOption.TabIndex = 8;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // Analytics
             // 
@@ -179,9 +184,9 @@
         private System.Windows.Forms.Label fromDate;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label Progressbar;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.ComboBox AnalyticsOption;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
