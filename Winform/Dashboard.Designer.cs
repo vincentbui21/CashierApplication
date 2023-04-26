@@ -63,13 +63,13 @@
             this.Sales_btn = new System.Windows.Forms.Button();
             this.Analytics_btn = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.user_namebox = new System.Windows.Forms.Label();
             this.ImagePanel_btn = new System.Windows.Forms.Panel();
             this.NavPanel_lbl = new System.Windows.Forms.Panel();
             this.User_Name = new System.Windows.Forms.Label();
             this.User_photo = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.user_namebox = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -526,6 +526,18 @@
             this.panel5.Size = new System.Drawing.Size(148, 126);
             this.panel5.TabIndex = 1;
             // 
+            // user_namebox
+            // 
+            this.user_namebox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.user_namebox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_namebox.Location = new System.Drawing.Point(18, 86);
+            this.user_namebox.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.user_namebox.Name = "user_namebox";
+            this.user_namebox.Size = new System.Drawing.Size(81, 23);
+            this.user_namebox.TabIndex = 10;
+            this.user_namebox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.user_namebox.Click += new System.EventHandler(this.user_namebox_Click);
+            // 
             // ImagePanel_btn
             // 
             this.ImagePanel_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -582,18 +594,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(84, 10);
             this.panel3.TabIndex = 1;
-            // 
-            // user_namebox
-            // 
-            this.user_namebox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.user_namebox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user_namebox.Location = new System.Drawing.Point(18, 86);
-            this.user_namebox.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.user_namebox.Name = "user_namebox";
-            this.user_namebox.Size = new System.Drawing.Size(81, 23);
-            this.user_namebox.TabIndex = 10;
-            this.user_namebox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.user_namebox.Click += new System.EventHandler(this.user_namebox_Click);
             // 
             // Dashboard
             // 

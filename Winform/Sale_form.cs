@@ -8,16 +8,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Winform
 {
     public partial class Sale_form : Form
     {
+
+
         private string sale_indentify;
         public Sale_form()
         {
             InitializeComponent();
         }
+
         public Sale_form(string sale_name)
         {
             this.sale_indentify = sale_name;
@@ -27,7 +31,7 @@ namespace Winform
         {
             if (MessageBox.Show("Are you sure to exit?", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != System.Windows.Forms.DialogResult.OK)
             {
-                
+
             }
             else
             {
@@ -47,8 +51,8 @@ namespace Winform
             while (line != null)
             {
                 string[] arr = line.Split(';');
-                if (arr.Length == 3 && arr[2]=="On Sale")
-                {                  
+                if (arr.Length == 3 && arr[2] == "On Sale")
+                {
                     product_list_cbb.Items.Add(arr[0]);
                 }
                 line = sr.ReadLine();
@@ -57,11 +61,11 @@ namespace Winform
         }
         private void button4_Click(object sender, EventArgs e)//Add item
         {
-            if(numericUpDown1.Value == 0)//check if the buyer buy at least 1 product
+            if (numericUpDown1.Value == 0)//check if the buyer buy at least 1 product
             {
                 MessageBox.Show("You need to buy at least 1 to add!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (product_list_cbb.SelectedIndex==-1)
+            else if (product_list_cbb.SelectedIndex == -1)
             {
                 MessageBox.Show("Please choose wanted product!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -98,22 +102,74 @@ namespace Winform
                 product_list_cbb.Text = "Choose here";
                 price_lbl.Text = "";
             }
-            
+            // Create a new Excel Application object
+            Excel.Application xlApp = new Excel.Application();
 
-            
+            if (xlApp == null)
+            {
+                MessageBox.Show("Excel is not properly installed on this computer!");
+                return;
+            }
+
+            // Set Excel to be visible (for debugging purposes)
+            xlApp.Visible = true;
+
+            // Create a new Workbook object
+            Excel.Workbook xlWorkbook = xlApp.Workbooks.Add();
+
+            // Create a new Worksheet object
+            Excel.Worksheet xlWorksheet = (Excel.Worksheet)xlWorkbook.Worksheets.Add();
+
+            // Set the worksheet name
+            xlWorksheet.Name = "Product Data";
+
+            // Loop through each row in the ListView
+            for (int i = 0; i < Product_lsv.Items.Count; i++)
+            {
+                // Loop through each column in the ListView and write the data to the worksheet
+                for (int j = 0; j < Product_lsv.Columns.Count; j++)
+                {
+                    xlWorksheet.Cells[i + 1, j + 1] = Product_lsv.Items[i].SubItems[j].Text;
+                }
+            }
+
+            // Save the Excel file
+            xlWorkbook.SaveAs("ProductData.xlsx");
+
+            // Close the workbook and Excel application objects
+            xlWorkbook.Close();
+            xlApp.Quit();
+
+            // Release the Excel objects from memory
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(xlWorksheet);
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(xlWorkbook);
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(xlApp);
+
+            MessageBox.Show("Product data has been saved to ProductData.xlsx");
         }
-        private void button2_Click(object sender, EventArgs e)//Delete item
-        {                      
-                //Delete chosen product
-                foreach (ListViewItem item in Product_lsv.Items)
+
+
+    }
+}
+
+
+     /* private void button2_Click(object sender, EventArgs e)//Delete item
+       {
+        //Delete chosen product
+        foreach (ListViewItem item in Product_lsv.Items)
                     if (item.Selected)
                     {
                         tempTotal_lbl.Text = (Convert.ToDecimal(tempTotal_lbl.Text) - Convert.ToDecimal(item.SubItems[2].Text)).ToString();
                         Product_lsv.Items.Remove(item);
                     }                                       
-        }
+       }
+
         private void button1_Click(object sender, EventArgs e)//pay
         {
+            // reference to the Sale_form
+            Sale_form saleForm = new Sale_form();
+
+
             decimal pay = Convert.ToDecimal(tempTotal_lbl.Text);
             if(pay==0)
             {
@@ -132,6 +188,7 @@ namespace Winform
         {
             time_lbl.Text = DateTime.Now.ToString();
         }      
+
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)//update price 
         {
             FileStream fs = new FileStream("itemdata.txt", FileMode.OpenOrCreate, FileAccess.Read);
@@ -149,15 +206,6 @@ namespace Winform
             }
             sr.Close();
         }
-
-        private void sale_name_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Product_lsv_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
-}
+}*/

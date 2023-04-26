@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Winform
 {
@@ -15,11 +16,6 @@ namespace Winform
         public Analytics()
         {
             InitializeComponent();
-        }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void AnalyticsOption_SelectedIndexChanged(object sender, EventArgs e)
@@ -43,5 +39,16 @@ namespace Winform
         {
 
         }
+  
+        private void Import_btn_Click(object sender, EventArgs e)
+        {
+            Excel.Application excelApp = new Excel.Application();
+
+        }
+
+        private void Analytics_Load(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+    }

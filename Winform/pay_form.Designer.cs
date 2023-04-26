@@ -107,7 +107,6 @@
             this.cash_lbl.TabIndex = 1;
             this.cash_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cash_lbl.TextChanged += new System.EventHandler(this.cash_lbl_TextChanged);
-            this.cash_lbl.Click += new System.EventHandler(this.cash_lbl_Click);
             // 
             // button11
             // 

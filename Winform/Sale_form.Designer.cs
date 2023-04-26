@@ -184,7 +184,6 @@
             this.product_list_cbb.TabIndex = 0;
             this.product_list_cbb.TabStop = false;
             this.product_list_cbb.Text = "Choose here ";
-            this.product_list_cbb.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
             // groupBox2
             // 
@@ -240,14 +239,13 @@
             // 
             this.pay_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pay_btn.ForeColor = System.Drawing.Color.DarkGreen;
-            this.pay_btn.Location = new System.Drawing.Point(472, 392);
+            this.pay_btn.Location = new System.Drawing.Point(473, 392);
             this.pay_btn.Margin = new System.Windows.Forms.Padding(2);
             this.pay_btn.Name = "pay_btn";
             this.pay_btn.Size = new System.Drawing.Size(90, 32);
             this.pay_btn.TabIndex = 3;
             this.pay_btn.Text = "Pay";
             this.pay_btn.UseVisualStyleBackColor = true;
-            this.pay_btn.Click += new System.EventHandler(this.button1_Click);
             // 
             // delete_btn
             // 
@@ -260,7 +258,6 @@
             this.delete_btn.TabIndex = 4;
             this.delete_btn.Text = "Delete";
             this.delete_btn.UseVisualStyleBackColor = true;
-            this.delete_btn.Click += new System.EventHandler(this.button2_Click);
             // 
             // Product_lsv
             // 
@@ -279,7 +276,7 @@
             this.Product_lsv.FullRowSelect = true;
             this.Product_lsv.GridLines = true;
             this.Product_lsv.HideSelection = false;
-            this.Product_lsv.Location = new System.Drawing.Point(9, 47);
+            this.Product_lsv.Location = new System.Drawing.Point(13, 38);
             this.Product_lsv.Margin = new System.Windows.Forms.Padding(2);
             this.Product_lsv.MultiSelect = false;
             this.Product_lsv.Name = "Product_lsv";
@@ -288,7 +285,6 @@
             this.Product_lsv.TabStop = false;
             this.Product_lsv.UseCompatibleStateImageBehavior = false;
             this.Product_lsv.View = System.Windows.Forms.View.Details;
-            this.Product_lsv.SelectedIndexChanged += new System.EventHandler(this.Product_lsv_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -311,7 +307,7 @@
             // 
             this.quit_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quit_btn.ForeColor = System.Drawing.Color.Brown;
-            this.quit_btn.Location = new System.Drawing.Point(364, 395);
+            this.quit_btn.Location = new System.Drawing.Point(364, 394);
             this.quit_btn.Margin = new System.Windows.Forms.Padding(2);
             this.quit_btn.Name = "quit_btn";
             this.quit_btn.Size = new System.Drawing.Size(91, 32);
@@ -354,7 +350,6 @@
             this.sale_name.Size = new System.Drawing.Size(81, 30);
             this.sale_name.TabIndex = 9;
             this.sale_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.sale_name.Click += new System.EventHandler(this.sale_name_Click);
             // 
             // time_lbl
             // 
@@ -370,7 +365,6 @@
             // timer1
             // 
             this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Sale_form
             // 

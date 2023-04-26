@@ -55,5 +55,4 @@ C:\Users\edark\source\repos\Cash_Register\CashierApplication\Winform\bin\Debug\C
 C:\Users\edark\source\repos\Cash_Register\CashierApplication\Winform\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
 C:\Users\edark\source\repos\Cash_Register\CashierApplication\Winform\obj\Debug\Winform.Sales_Report.resources
 C:\Users\edark\source\repos\Cash_Register\CashierApplication\Winform\obj\Debug\Winform.Analytics.resources
-C:\Users\edark\source\repos\Cash_Register\CashierApplication\Winform\obj\Debug\Winform.Income.resources
 C:\Users\edark\source\repos\Cash_Register\CashierApplication\Winform\obj\Debug\Winform.Inventory.resources
