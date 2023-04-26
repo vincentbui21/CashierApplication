@@ -147,22 +147,16 @@ namespace Winform
 
             MessageBox.Show("Product data has been saved to ProductData.xlsx");
         }
-
-
-    }
-}
-
-
-     /* private void button2_Click(object sender, EventArgs e)//Delete item
-       {
-        //Delete chosen product
-        foreach (ListViewItem item in Product_lsv.Items)
-                    if (item.Selected)
-                    {
-                        tempTotal_lbl.Text = (Convert.ToDecimal(tempTotal_lbl.Text) - Convert.ToDecimal(item.SubItems[2].Text)).ToString();
-                        Product_lsv.Items.Remove(item);
-                    }                                       
-       }
+        private void button2_Click(object sender, EventArgs e)//Delete item
+        {
+            //Delete chosen product
+            foreach (ListViewItem item in Product_lsv.Items)
+                if (item.Selected)
+                {
+                    tempTotal_lbl.Text = (Convert.ToDecimal(tempTotal_lbl.Text) - Convert.ToDecimal(item.SubItems[2].Text)).ToString();
+                    Product_lsv.Items.Remove(item);
+                }
+        }
 
         private void button1_Click(object sender, EventArgs e)//pay
         {
@@ -171,7 +165,7 @@ namespace Winform
 
 
             decimal pay = Convert.ToDecimal(tempTotal_lbl.Text);
-            if(pay==0)
+            if (pay == 0)
             {
                 MessageBox.Show("You have not bought anything to pay", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -180,7 +174,7 @@ namespace Winform
                 pay_form form = new pay_form(pay);
                 this.Hide();
                 form.ShowDialog();
-                
+
                 FileStream fs = new FileStream("sale_record.txt", FileMode.OpenOrCreate, FileAccess.Write);
                 StreamWriter sw = new StreamWriter(fs);
 
@@ -188,12 +182,12 @@ namespace Winform
 
                 this.Show();
             }
-            
+
         }
         private void timer1_Tick(object sender, EventArgs e)//display time
         {
             time_lbl.Text = DateTime.Now.ToString();
-        }      
+        }
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)//update price 
         {
@@ -212,6 +206,14 @@ namespace Winform
             }
             sr.Close();
         }
-       
-    }
-}*/
+
+    } 
+}
+
+
+
+
+
+
+
+
