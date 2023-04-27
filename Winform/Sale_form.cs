@@ -131,6 +131,12 @@ namespace Winform
                 pay_form form = new pay_form(pay);
                 this.Hide();
                 form.ShowDialog();
+
+                FileStream fs = new FileStream("sale_record.txt", FileMode.OpenOrCreate, FileAccess.Write);
+                StreamWriter sw = new StreamWriter(fs);
+
+                sw.Write(Product_lsv.Items[1]);
+
                 this.Show();
             }
 
