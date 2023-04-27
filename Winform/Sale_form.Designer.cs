@@ -246,6 +246,7 @@
             this.pay_btn.TabIndex = 3;
             this.pay_btn.Text = "Pay";
             this.pay_btn.UseVisualStyleBackColor = true;
+            this.pay_btn.Click += new System.EventHandler(this.pay_btn_Click);
             // 
             // delete_btn
             // 

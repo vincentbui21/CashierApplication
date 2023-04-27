@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Winform
 {
@@ -22,16 +21,16 @@ namespace Winform
         {
            
                 // Create a new drop-down menu
-                //ToolStripDropDownMenu dropDownMenu = new ToolStripDropDownMenu();
+                ToolStripDropDownMenu dropDownMenu = new ToolStripDropDownMenu();
 
                 // Create some menu items
-               // ToolStripMenuItem menuItem1 = new ToolStripMenuItem("Sales");
-                //ToolStripMenuItem menuItem2 = new ToolStripMenuItem("Income");
+               ToolStripMenuItem menuItem1 = new ToolStripMenuItem("Sales");
+                ToolStripMenuItem menuItem2 = new ToolStripMenuItem("Top Product");
                
 
                 // Add the menu items to the drop-down menu
-               // dropDownMenu.Items.Add(menuItem1);
-                //dropDownMenu.Items.Add(menuItem2);
+               dropDownMenu.Items.Add(menuItem1);
+                dropDownMenu.Items.Add(menuItem2);
 
         }
 
@@ -42,8 +41,7 @@ namespace Winform
   
         private void Import_btn_Click(object sender, EventArgs e)
         {
-            Excel.Application excelApp = new Excel.Application();
-
+   
         }
 
         private void Analytics_Load(object sender, EventArgs e)

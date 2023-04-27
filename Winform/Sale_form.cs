@@ -158,6 +158,33 @@ namespace Winform
             }
             sr.Close();
         }
+
+        private void pay_btn_Click(object sender, EventArgs e)
+        {  
+            //open up the pay form
+            pay_form f2 = new pay_form();
+            this.Hide();
+            f2.ShowDialog();
+
+            string date = time_lbl.Text;
+            // creating the file "ReportData.txt" for writing
+            StreamWriter writer = new StreamWriter("ReportData.txt", true);
+
+            // Iterating through each item in the list view
+            foreach (ListViewItem item in Product_lsv.Items)
+            {
+                // Writing each column value separated by a comma
+                writer.Write(item.SubItems[0].Text + ";");
+                writer.Write(item.SubItems[1].Text + ";");
+                writer.Write(item.SubItems[2].Text + ";");
+                writer.WriteLine(date);
+            }
+            // Close the file
+            writer.Flush();
+            writer.Close();
+
+            this.Show();
+        }
     }
 
 
