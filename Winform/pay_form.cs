@@ -14,6 +14,7 @@ namespace Winform
     public partial class pay_form : Form
     {
         private decimal total_price;
+        public bool status;
         public pay_form()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace Winform
         {
             InitializeComponent();
             this.total_price = total_price;
+            
         }
 
         private void pay_form_Load(object sender, EventArgs e)
@@ -122,6 +124,7 @@ namespace Winform
 
         private void cancel_btn_Click(object sender, EventArgs e)
         {
+            status = false;
             this.Close();
         }
 
@@ -227,7 +230,7 @@ namespace Winform
             {
                 if (MessageBox.Show("Do you want receipt?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
                 {
-
+                    status = true;
                 }
             }
 

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.Sales_table = new System.Windows.Forms.TableLayoutPanel();
             this.TotalSales_lbl = new System.Windows.Forms.Label();
-            this.ItemName = new System.Windows.Forms.Label();
             this.pricebox = new System.Windows.Forms.Label();
             this.Qtysold = new System.Windows.Forms.Label();
+            this.ItemName = new System.Windows.Forms.Label();
             this.Filter_btn = new System.Windows.Forms.Button();
             this.ToDate = new System.Windows.Forms.Label();
             this.fromDate = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.YearlySales = new System.Windows.Forms.Label();
             this.Yearly = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.Sales_table.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -66,7 +66,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MistyRose;
-            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Controls.Add(this.Sales_table);
             this.panel1.Controls.Add(this.Filter_btn);
             this.panel1.Controls.Add(this.ToDate);
             this.panel1.Controls.Add(this.fromDate);
@@ -81,25 +81,25 @@
             this.panel1.Size = new System.Drawing.Size(809, 462);
             this.panel1.TabIndex = 0;
             // 
-            // tableLayoutPanel1
+            // Sales_table
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.TotalSales_lbl, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pricebox, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.Qtysold, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ItemName, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(60, 257);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.37762F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.62238F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(613, 146);
-            this.tableLayoutPanel1.TabIndex = 5;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.Sales_table.ColumnCount = 4;
+            this.Sales_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Sales_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.Sales_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.Sales_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Sales_table.Controls.Add(this.TotalSales_lbl, 3, 0);
+            this.Sales_table.Controls.Add(this.pricebox, 2, 0);
+            this.Sales_table.Controls.Add(this.Qtysold, 1, 0);
+            this.Sales_table.Controls.Add(this.ItemName, 0, 0);
+            this.Sales_table.Location = new System.Drawing.Point(60, 257);
+            this.Sales_table.Name = "Sales_table";
+            this.Sales_table.RowCount = 2;
+            this.Sales_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.37762F));
+            this.Sales_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.62238F));
+            this.Sales_table.Size = new System.Drawing.Size(692, 202);
+            this.Sales_table.TabIndex = 5;
+            this.Sales_table.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // TotalSales_lbl
             // 
@@ -112,19 +112,6 @@
             this.TotalSales_lbl.Size = new System.Drawing.Size(248, 15);
             this.TotalSales_lbl.TabIndex = 0;
             this.TotalSales_lbl.Text = "Total Sales";
-            // 
-            // ItemName
-            // 
-            this.ItemName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ItemName.AutoSize = true;
-            this.ItemName.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ItemName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ItemName.Location = new System.Drawing.Point(3, 17);
-            this.ItemName.Name = "ItemName";
-            this.ItemName.Size = new System.Drawing.Size(248, 15);
-            this.ItemName.TabIndex = 0;
-            this.ItemName.Text = "Item Description";
             // 
             // pricebox
             // 
@@ -149,6 +136,19 @@
             this.Qtysold.Size = new System.Drawing.Size(44, 30);
             this.Qtysold.TabIndex = 1;
             this.Qtysold.Text = "Qty Sold";
+            // 
+            // ItemName
+            // 
+            this.ItemName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ItemName.AutoSize = true;
+            this.ItemName.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ItemName.Location = new System.Drawing.Point(3, 17);
+            this.ItemName.Name = "ItemName";
+            this.ItemName.Size = new System.Drawing.Size(248, 15);
+            this.ItemName.TabIndex = 0;
+            this.ItemName.Text = "Item Description";
             // 
             // Filter_btn
             // 
@@ -385,8 +385,8 @@
             this.Load += new System.EventHandler(this.Sales_Report_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.Sales_table.ResumeLayout(false);
+            this.Sales_table.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -418,7 +418,7 @@
         private System.Windows.Forms.Label YSdescription;
         private System.Windows.Forms.Label YearlySales;
         private System.Windows.Forms.Label Yearly;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel Sales_table;
         private System.Windows.Forms.Label TotalSales_lbl;
         private System.Windows.Forms.Label ItemName;
         private System.Windows.Forms.Label pricebox;

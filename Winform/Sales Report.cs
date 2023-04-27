@@ -16,49 +16,8 @@ namespace Winform
         public Sales_Report()
         {
             InitializeComponent();
-            PopulateTableWithData();
         }
-        private void PopulateTableWithData()
-        {
-            // path to itemdata.txt file
-            string filePath = "C:\\Users\\edark\\source\\repos\\Cash_Register\\CashierApplication\\Winform\\bin\\Debug\\itemdata.txt";
 
-            try
-            {
-                //a StreamReader object for reading
-                StreamReader reader = new StreamReader(filePath);
-
-                // Looping through each line of the file
-                while (!reader.EndOfStream)
-                {
-                    // Read the line and split it into separate values
-                    string line = reader.ReadLine();
-                    string[] values = line.Split(',');
-
-                    // Add a new row to the table
-                    tableLayoutPanel1.RowCount++;
-
-                    // Loop through each value in the line and add it to the table
-                    for (int i = 0; i < values.Length; i++)
-                    {
-                        // Create a new label with the value
-                        Label label = new Label();
-                        label.Text = values[i];
-
-                        // Add the label to the appropriate cell in the table
-                        tableLayoutPanel1.Controls.Add(label, i, tableLayoutPanel1.RowCount - 1);
-                    }
-                }
-
-                // Close the reader
-                reader.Close();
-            }
-            catch (Exception ex)
-            {
-                // Handle any errors that occur
-                MessageBox.Show("Error: " + ex.Message);
-            }
-        }
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -66,7 +25,38 @@ namespace Winform
 
         private void Sales_Report_Load(object sender, EventArgs e)
         {
+            string filePath = "ReportData.txt";
 
+            // Read all lines from the file
+            string[] lines = System.IO.File.ReadAllLines(filePath);
+
+            // Loop through each line and split it by semicolon
+            foreach (string line in lines)
+            {
+                string[] items = line.Split(';');
+
+                // Create a new row in the table layout panel
+                int rowIndex = Sales_table.RowCount++;
+                Sales_table.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+
+                // Loop through the first 3 items and add them to the row
+                for (int i = 0; i < 3; i++)
+                {
+                    // If there are no more items in the line, break out of the loop
+                    if (i >= items.Length)
+                    {
+                        break;
+                    }
+
+                    // Create a new label and set its text to the item
+                    Label label = new Label();
+                    label.Text = items[i];
+
+                    // Add the label to the table layout panel at the current row and column
+                    Sales_table.Controls.Add(label, i, rowIndex);
+                }
+
+            }
         }
     }
 }
