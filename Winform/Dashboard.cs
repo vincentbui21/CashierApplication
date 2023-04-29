@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Reflection.Emit;
+using System.IO;
 
 namespace Winform
 {
@@ -31,15 +33,46 @@ namespace Winform
 
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-        
+            
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void DisplayReportDataSum()
         {
+            // Specify the path of the text file
+            string filePath = "ReportData.txt";
 
+            // Initialize a counter variable to keep track of the sum
+            int sum = 0;
+
+            // Read all lines from the text file
+            string[] lines = System.IO.File.ReadAllLines(filePath);
+
+            // Loop through each line of the text file
+            foreach (string line in lines)
+            {
+                // Split the line by semicolon to get an array of items
+                string[] items = line.Split(';');
+
+                // Check if the array has at least 3 items
+                if (items.Length >= 3)
+                {
+                    // Try to parse the third item as an integer
+                    if (int.TryParse(items[2], out int thirdItem))
+                    {
+                        // Add the third item to the sum
+                        sum += thirdItem;
+                    }
+                }
+            }
+
+            // Display the sum in the label3
+            label3.Text = sum.ToString();
         }
 
-               private void Analytics_btn_Click(object sender, EventArgs e)
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            DisplayReportDataSum();
+        }
+        private void Analytics_btn_Click(object sender, EventArgs e)
         {
             NavPanel_lbl.Height = Analytics_btn.Height;
             NavPanel_lbl.Top = Analytics_btn.Top;
@@ -60,9 +93,8 @@ namespace Winform
                 f2.ShowDialog();
                 this.Show();
         }
-
-
-        private void Expenditure_btn_Click(object sender, EventArgs e)
+          
+         private void Expenditure_btn_Click(object sender, EventArgs e)
         {
             NavPanel_lbl.Height = Invoices_btn.Height;
             NavPanel_lbl.Top = Invoices_btn.Top;
@@ -106,5 +138,7 @@ namespace Winform
             string tb_UserName = null;
             user_namebox.Text = tb_UserName;
         }
+
+       
     }
 }

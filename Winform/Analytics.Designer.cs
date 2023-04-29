@@ -32,17 +32,16 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.AnalyticsOption = new System.Windows.Forms.ComboBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.AnalyticsOption = new System.Windows.Forms.ComboBox();
             this.Progressbar = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.Filter_btn = new System.Windows.Forms.Button();
+            this.Filter_btn1 = new System.Windows.Forms.Button();
             this.ToDate = new System.Windows.Forms.Label();
             this.fromDate = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_B = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_A = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
@@ -50,33 +49,19 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MistyRose;
-            this.panel1.Controls.Add(this.AnalyticsOption);
             this.panel1.Controls.Add(this.chart1);
+            this.panel1.Controls.Add(this.AnalyticsOption);
             this.panel1.Controls.Add(this.Progressbar);
             this.panel1.Controls.Add(this.progressBar1);
-            this.panel1.Controls.Add(this.Filter_btn);
+            this.panel1.Controls.Add(this.Filter_btn1);
             this.panel1.Controls.Add(this.ToDate);
             this.panel1.Controls.Add(this.fromDate);
-            this.panel1.Controls.Add(this.dateTimePicker2);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.dateTimePicker_B);
+            this.panel1.Controls.Add(this.dateTimePicker_A);
             this.panel1.Location = new System.Drawing.Point(-4, -6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(809, 462);
             this.panel1.TabIndex = 1;
-            // 
-            // AnalyticsOption
-            // 
-            this.AnalyticsOption.BackColor = System.Drawing.Color.MistyRose;
-            this.AnalyticsOption.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AnalyticsOption.FormattingEnabled = true;
-            this.AnalyticsOption.Items.AddRange(new object[] {
-            "Sales ",
-            "Top Product"});
-            this.AnalyticsOption.Location = new System.Drawing.Point(477, 33);
-            this.AnalyticsOption.Name = "AnalyticsOption";
-            this.AnalyticsOption.Size = new System.Drawing.Size(121, 21);
-            this.AnalyticsOption.TabIndex = 8;
-            this.AnalyticsOption.SelectedIndexChanged += new System.EventHandler(this.AnalyticsOption_SelectedIndexChanged);
             // 
             // chart1
             // 
@@ -84,21 +69,33 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(19, 94);
+            this.chart1.Location = new System.Drawing.Point(39, 84);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
-            series1.Name = "Sales Value";
+            series1.Name = "Series1";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
-            series2.Name = "Top Products";
+            series2.Name = "Series2";
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(718, 281);
-            this.chart1.TabIndex = 7;
+            this.chart1.Size = new System.Drawing.Size(684, 300);
+            this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
-            title1.Name = "Sales Chart";
-            this.chart1.Titles.Add(title1);
+            // 
+            // AnalyticsOption
+            // 
+            this.AnalyticsOption.BackColor = System.Drawing.Color.MistyRose;
+            this.AnalyticsOption.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnalyticsOption.FormattingEnabled = true;
+            this.AnalyticsOption.Items.AddRange(new object[] {
+            "Sales",
+            "Top Product"});
+            this.AnalyticsOption.Location = new System.Drawing.Point(477, 33);
+            this.AnalyticsOption.Name = "AnalyticsOption";
+            this.AnalyticsOption.Size = new System.Drawing.Size(121, 21);
+            this.AnalyticsOption.TabIndex = 8;
+            this.AnalyticsOption.SelectedIndexChanged += new System.EventHandler(this.AnalyticsOption_SelectedIndexChanged);
             // 
             // Progressbar
             // 
@@ -119,17 +116,18 @@
             this.progressBar1.TabIndex = 5;
             this.progressBar1.Value = 60;
             // 
-            // Filter_btn
+            // Filter_btn1
             // 
-            this.Filter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Filter_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Filter_btn.ForeColor = System.Drawing.Color.DimGray;
-            this.Filter_btn.Location = new System.Drawing.Point(615, 33);
-            this.Filter_btn.Name = "Filter_btn";
-            this.Filter_btn.Size = new System.Drawing.Size(75, 23);
-            this.Filter_btn.TabIndex = 4;
-            this.Filter_btn.Text = "Filter";
-            this.Filter_btn.UseVisualStyleBackColor = true;
+            this.Filter_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Filter_btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Filter_btn1.ForeColor = System.Drawing.Color.DimGray;
+            this.Filter_btn1.Location = new System.Drawing.Point(615, 33);
+            this.Filter_btn1.Name = "Filter_btn1";
+            this.Filter_btn1.Size = new System.Drawing.Size(75, 23);
+            this.Filter_btn1.TabIndex = 4;
+            this.Filter_btn1.Text = "Filter";
+            this.Filter_btn1.UseVisualStyleBackColor = true;
+            this.Filter_btn1.Click += new System.EventHandler(this.Filter_btn1_Click);
             // 
             // ToDate
             // 
@@ -153,20 +151,19 @@
             this.fromDate.TabIndex = 2;
             this.fromDate.Text = "From Date";
             // 
-            // dateTimePicker2
+            // dateTimePicker_B
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(319, 34);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(142, 20);
-            this.dateTimePicker2.TabIndex = 1;
+            this.dateTimePicker_B.Location = new System.Drawing.Point(319, 34);
+            this.dateTimePicker_B.Name = "dateTimePicker_B";
+            this.dateTimePicker_B.Size = new System.Drawing.Size(142, 20);
+            this.dateTimePicker_B.TabIndex = 1;
             // 
-            // dateTimePicker1
+            // dateTimePicker_A
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(87, 34);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(150, 20);
-            this.dateTimePicker1.TabIndex = 1;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dateTimePicker_A.Location = new System.Drawing.Point(87, 34);
+            this.dateTimePicker_A.Name = "dateTimePicker_A";
+            this.dateTimePicker_A.Size = new System.Drawing.Size(150, 20);
+            this.dateTimePicker_A.TabIndex = 1;
             // 
             // Analytics
             // 
@@ -187,11 +184,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button Filter_btn;
+        private System.Windows.Forms.Button Filter_btn1;
         private System.Windows.Forms.Label ToDate;
         private System.Windows.Forms.Label fromDate;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_B;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_A;
         private System.Windows.Forms.Label Progressbar;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.ComboBox AnalyticsOption;

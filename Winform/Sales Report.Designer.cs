@@ -83,21 +83,25 @@
             // 
             // Sales_table
             // 
+            this.Sales_table.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Sales_table.ColumnCount = 4;
             this.Sales_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Sales_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.Sales_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.Sales_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.Sales_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Sales_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.Sales_table.Controls.Add(this.TotalSales_lbl, 3, 0);
             this.Sales_table.Controls.Add(this.pricebox, 2, 0);
             this.Sales_table.Controls.Add(this.Qtysold, 1, 0);
             this.Sales_table.Controls.Add(this.ItemName, 0, 0);
-            this.Sales_table.Location = new System.Drawing.Point(60, 257);
+            this.Sales_table.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sales_table.Location = new System.Drawing.Point(60, 267);
             this.Sales_table.Name = "Sales_table";
             this.Sales_table.RowCount = 2;
             this.Sales_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.37762F));
             this.Sales_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.62238F));
-            this.Sales_table.Size = new System.Drawing.Size(692, 202);
+            this.Sales_table.Size = new System.Drawing.Size(638, 147);
             this.Sales_table.TabIndex = 5;
             this.Sales_table.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -106,10 +110,10 @@
             this.TotalSales_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TotalSales_lbl.AutoSize = true;
-            this.TotalSales_lbl.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalSales_lbl.Location = new System.Drawing.Point(362, 17);
+            this.TotalSales_lbl.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalSales_lbl.Location = new System.Drawing.Point(389, 15);
             this.TotalSales_lbl.Name = "TotalSales_lbl";
-            this.TotalSales_lbl.Size = new System.Drawing.Size(248, 15);
+            this.TotalSales_lbl.Size = new System.Drawing.Size(246, 17);
             this.TotalSales_lbl.TabIndex = 0;
             this.TotalSales_lbl.Text = "Total Sales";
             // 
@@ -118,10 +122,10 @@
             this.pricebox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pricebox.AutoSize = true;
-            this.pricebox.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pricebox.Location = new System.Drawing.Point(307, 17);
+            this.pricebox.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricebox.Location = new System.Drawing.Point(334, 15);
             this.pricebox.Name = "pricebox";
-            this.pricebox.Size = new System.Drawing.Size(49, 15);
+            this.pricebox.Size = new System.Drawing.Size(49, 17);
             this.pricebox.TabIndex = 0;
             this.pricebox.Text = "Price";
             // 
@@ -130,10 +134,10 @@
             this.Qtysold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Qtysold.AutoSize = true;
-            this.Qtysold.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Qtysold.Location = new System.Drawing.Point(257, 2);
+            this.Qtysold.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Qtysold.Location = new System.Drawing.Point(254, 15);
             this.Qtysold.Name = "Qtysold";
-            this.Qtysold.Size = new System.Drawing.Size(44, 30);
+            this.Qtysold.Size = new System.Drawing.Size(74, 17);
             this.Qtysold.TabIndex = 1;
             this.Qtysold.Text = "Qty Sold";
             // 
@@ -142,11 +146,11 @@
             this.ItemName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ItemName.AutoSize = true;
-            this.ItemName.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemName.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ItemName.Location = new System.Drawing.Point(3, 17);
+            this.ItemName.Location = new System.Drawing.Point(3, 15);
             this.ItemName.Name = "ItemName";
-            this.ItemName.Size = new System.Drawing.Size(248, 15);
+            this.ItemName.Size = new System.Drawing.Size(245, 17);
             this.ItemName.TabIndex = 0;
             this.ItemName.Text = "Item Description";
             // 
@@ -161,6 +165,7 @@
             this.Filter_btn.TabIndex = 4;
             this.Filter_btn.Text = "Filter";
             this.Filter_btn.UseVisualStyleBackColor = true;
+            this.Filter_btn.Click += new System.EventHandler(this.Filter_btn_Click);
             // 
             // ToDate
             // 
@@ -227,9 +232,8 @@
             this.DailySales.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.DailySales.Location = new System.Drawing.Point(51, 33);
             this.DailySales.Name = "DailySales";
-            this.DailySales.Size = new System.Drawing.Size(34, 25);
+            this.DailySales.Size = new System.Drawing.Size(0, 25);
             this.DailySales.TabIndex = 0;
-            this.DailySales.Text = "$4";
             // 
             // Daily
             // 
@@ -271,9 +275,9 @@
             this.WeeklySales.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.WeeklySales.Location = new System.Drawing.Point(51, 33);
             this.WeeklySales.Name = "WeeklySales";
-            this.WeeklySales.Size = new System.Drawing.Size(45, 25);
+            this.WeeklySales.Size = new System.Drawing.Size(23, 25);
             this.WeeklySales.TabIndex = 0;
-            this.WeeklySales.Text = "$34";
+            this.WeeklySales.Text = "$";
             // 
             // Weekly
             // 
@@ -315,9 +319,9 @@
             this.MonthlySales.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.MonthlySales.Location = new System.Drawing.Point(55, 33);
             this.MonthlySales.Name = "MonthlySales";
-            this.MonthlySales.Size = new System.Drawing.Size(56, 25);
+            this.MonthlySales.Size = new System.Drawing.Size(23, 25);
             this.MonthlySales.TabIndex = 0;
-            this.MonthlySales.Text = "$234";
+            this.MonthlySales.Text = "$";
             // 
             // Monthly
             // 
