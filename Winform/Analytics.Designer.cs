@@ -86,25 +86,25 @@
             // AnalyticsOption
             // 
             this.AnalyticsOption.BackColor = System.Drawing.Color.MistyRose;
-            this.AnalyticsOption.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnalyticsOption.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnalyticsOption.FormattingEnabled = true;
             this.AnalyticsOption.Items.AddRange(new object[] {
             "Sales",
             "Top Product"});
-            this.AnalyticsOption.Location = new System.Drawing.Point(477, 33);
+            this.AnalyticsOption.Location = new System.Drawing.Point(467, 33);
             this.AnalyticsOption.Name = "AnalyticsOption";
-            this.AnalyticsOption.Size = new System.Drawing.Size(121, 21);
+            this.AnalyticsOption.Size = new System.Drawing.Size(121, 24);
             this.AnalyticsOption.TabIndex = 8;
             this.AnalyticsOption.SelectedIndexChanged += new System.EventHandler(this.AnalyticsOption_SelectedIndexChanged);
             // 
             // Progressbar
             // 
             this.Progressbar.AutoSize = true;
-            this.Progressbar.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Progressbar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Progressbar.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Progressbar.Location = new System.Drawing.Point(533, 397);
             this.Progressbar.Name = "Progressbar";
-            this.Progressbar.Size = new System.Drawing.Size(104, 21);
+            this.Progressbar.Size = new System.Drawing.Size(100, 19);
             this.Progressbar.TabIndex = 6;
             this.Progressbar.Text = "Progress Bar";
             // 
@@ -119,7 +119,7 @@
             // Filter_btn1
             // 
             this.Filter_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Filter_btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Filter_btn1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Filter_btn1.ForeColor = System.Drawing.Color.DimGray;
             this.Filter_btn1.Location = new System.Drawing.Point(615, 33);
             this.Filter_btn1.Name = "Filter_btn1";
@@ -132,27 +132,28 @@
             // ToDate
             // 
             this.ToDate.AutoSize = true;
-            this.ToDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToDate.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToDate.ForeColor = System.Drawing.Color.DimGray;
-            this.ToDate.Location = new System.Drawing.Point(260, 34);
+            this.ToDate.Location = new System.Drawing.Point(257, 34);
             this.ToDate.Name = "ToDate";
-            this.ToDate.Size = new System.Drawing.Size(53, 13);
+            this.ToDate.Size = new System.Drawing.Size(55, 16);
             this.ToDate.TabIndex = 3;
             this.ToDate.Text = "To Date";
             // 
             // fromDate
             // 
             this.fromDate.AutoSize = true;
-            this.fromDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fromDate.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fromDate.ForeColor = System.Drawing.Color.DimGray;
-            this.fromDate.Location = new System.Drawing.Point(16, 34);
+            this.fromDate.Location = new System.Drawing.Point(12, 34);
             this.fromDate.Name = "fromDate";
-            this.fromDate.Size = new System.Drawing.Size(65, 13);
+            this.fromDate.Size = new System.Drawing.Size(72, 16);
             this.fromDate.TabIndex = 2;
             this.fromDate.Text = "From Date";
             // 
             // dateTimePicker_B
             // 
+            this.dateTimePicker_B.CalendarFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker_B.Location = new System.Drawing.Point(319, 34);
             this.dateTimePicker_B.Name = "dateTimePicker_B";
             this.dateTimePicker_B.Size = new System.Drawing.Size(142, 20);
@@ -160,6 +161,7 @@
             // 
             // dateTimePicker_A
             // 
+            this.dateTimePicker_A.CalendarFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker_A.Location = new System.Drawing.Point(87, 34);
             this.dateTimePicker_A.Name = "dateTimePicker_A";
             this.dateTimePicker_A.Size = new System.Drawing.Size(150, 20);
@@ -173,7 +175,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "Analytics";
             this.Text = "Analytics";
-            this.Load += new System.EventHandler(this.Analytics_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

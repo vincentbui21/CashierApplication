@@ -26,6 +26,12 @@ namespace Winform
             this.sale_indentify = sale_name;
             InitializeComponent();
         }
+        public string SaleNameLabel
+        {
+            get { return sale_name.Text; }
+            set { sale_name.Text = value; }
+        }
+
         private void button3_Click(object sender, EventArgs e)//exit button
         {
             if (MessageBox.Show("Are you sure to exit?", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != System.Windows.Forms.DialogResult.OK)

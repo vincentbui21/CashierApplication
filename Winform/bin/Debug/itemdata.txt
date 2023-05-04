@@ -12,4 +12,7 @@ TOMATOES;6;Discontinue
 BEER;7;On Sale
 GUITAR;450;On Sale
 SUGAR;7;Discontinue
-WATER;3;On Sale
+WATER;2;On Sale
+PENCIL;2;Discontinue
+CALCULATOR;15;Discontinue
+CARD;3;Discontinue

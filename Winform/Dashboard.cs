@@ -28,13 +28,20 @@ namespace Winform
       int nHeightEllipse
 
    );
+        private Sale_form saleForm;
         public Dashboard()
         {
 
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-            
         }
+        public Dashboard(Sale_form saleForm)
+        {
+            InitializeComponent();
+            this.saleForm = saleForm;
+        }
+
+
         private void DisplayReportDataSum()
         {
             // Specify the path of the text file
@@ -70,6 +77,7 @@ namespace Winform
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            user_namebox.Text = saleForm.SaleNameLabel;
             DisplayReportDataSum();
         }
         private void Analytics_btn_Click(object sender, EventArgs e)
@@ -88,13 +96,13 @@ namespace Winform
             NavPanel_lbl.Height = Sales_btn.Height;
             NavPanel_lbl.Top = Sales_btn.Top;
             Sales_btn.BackColor = Color.FromArgb(240, 128, 128);
-                Sales_Report f2 = new Sales_Report();
-                this.Hide();
-                f2.ShowDialog();
-                this.Show();
+            Sales_Report f2 = new Sales_Report();
+            this.Hide();
+            f2.ShowDialog();
+            this.Show();
         }
-          
-         private void Expenditure_btn_Click(object sender, EventArgs e)
+
+        private void Expenditure_btn_Click(object sender, EventArgs e)
         {
             NavPanel_lbl.Height = Invoices_btn.Height;
             NavPanel_lbl.Top = Invoices_btn.Top;
@@ -138,7 +146,5 @@ namespace Winform
             string tb_UserName = null;
             user_namebox.Text = tb_UserName;
         }
-
-       
     }
 }

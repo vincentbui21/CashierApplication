@@ -95,7 +95,7 @@
             this.Sales_table.Controls.Add(this.pricebox, 2, 0);
             this.Sales_table.Controls.Add(this.Qtysold, 1, 0);
             this.Sales_table.Controls.Add(this.ItemName, 0, 0);
-            this.Sales_table.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sales_table.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sales_table.Location = new System.Drawing.Point(60, 267);
             this.Sales_table.Name = "Sales_table";
             this.Sales_table.RowCount = 2;
@@ -110,10 +110,10 @@
             this.TotalSales_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TotalSales_lbl.AutoSize = true;
-            this.TotalSales_lbl.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalSales_lbl.Location = new System.Drawing.Point(389, 15);
+            this.TotalSales_lbl.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalSales_lbl.Location = new System.Drawing.Point(389, 16);
             this.TotalSales_lbl.Name = "TotalSales_lbl";
-            this.TotalSales_lbl.Size = new System.Drawing.Size(246, 17);
+            this.TotalSales_lbl.Size = new System.Drawing.Size(246, 16);
             this.TotalSales_lbl.TabIndex = 0;
             this.TotalSales_lbl.Text = "Total Sales";
             // 
@@ -122,10 +122,10 @@
             this.pricebox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pricebox.AutoSize = true;
-            this.pricebox.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pricebox.Location = new System.Drawing.Point(334, 15);
+            this.pricebox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricebox.Location = new System.Drawing.Point(334, 16);
             this.pricebox.Name = "pricebox";
-            this.pricebox.Size = new System.Drawing.Size(49, 17);
+            this.pricebox.Size = new System.Drawing.Size(49, 16);
             this.pricebox.TabIndex = 0;
             this.pricebox.Text = "Price";
             // 
@@ -134,10 +134,10 @@
             this.Qtysold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Qtysold.AutoSize = true;
-            this.Qtysold.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Qtysold.Location = new System.Drawing.Point(254, 15);
+            this.Qtysold.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Qtysold.Location = new System.Drawing.Point(254, 16);
             this.Qtysold.Name = "Qtysold";
-            this.Qtysold.Size = new System.Drawing.Size(74, 17);
+            this.Qtysold.Size = new System.Drawing.Size(74, 16);
             this.Qtysold.TabIndex = 1;
             this.Qtysold.Text = "Qty Sold";
             // 
@@ -146,18 +146,18 @@
             this.ItemName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ItemName.AutoSize = true;
-            this.ItemName.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemName.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ItemName.Location = new System.Drawing.Point(3, 15);
+            this.ItemName.Location = new System.Drawing.Point(3, 16);
             this.ItemName.Name = "ItemName";
-            this.ItemName.Size = new System.Drawing.Size(245, 17);
+            this.ItemName.Size = new System.Drawing.Size(245, 16);
             this.ItemName.TabIndex = 0;
             this.ItemName.Text = "Item Description";
             // 
             // Filter_btn
             // 
             this.Filter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Filter_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Filter_btn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Filter_btn.ForeColor = System.Drawing.Color.DimGray;
             this.Filter_btn.Location = new System.Drawing.Point(351, 198);
             this.Filter_btn.Name = "Filter_btn";
@@ -170,37 +170,39 @@
             // ToDate
             // 
             this.ToDate.AutoSize = true;
-            this.ToDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToDate.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToDate.ForeColor = System.Drawing.Color.DimGray;
-            this.ToDate.Location = new System.Drawing.Point(15, 225);
+            this.ToDate.Location = new System.Drawing.Point(15, 220);
             this.ToDate.Name = "ToDate";
-            this.ToDate.Size = new System.Drawing.Size(53, 13);
+            this.ToDate.Size = new System.Drawing.Size(55, 16);
             this.ToDate.TabIndex = 3;
             this.ToDate.Text = "To Date";
             // 
             // fromDate
             // 
             this.fromDate.AutoSize = true;
-            this.fromDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fromDate.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fromDate.ForeColor = System.Drawing.Color.DimGray;
-            this.fromDate.Location = new System.Drawing.Point(15, 185);
+            this.fromDate.Location = new System.Drawing.Point(13, 180);
             this.fromDate.Name = "fromDate";
-            this.fromDate.Size = new System.Drawing.Size(65, 13);
+            this.fromDate.Size = new System.Drawing.Size(72, 16);
             this.fromDate.TabIndex = 2;
             this.fromDate.Text = "From Date";
             // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Location = new System.Drawing.Point(90, 219);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 21);
             this.dateTimePicker2.TabIndex = 1;
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(90, 178);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 21);
             this.dateTimePicker1.TabIndex = 1;
             // 
             // panel5
@@ -238,11 +240,11 @@
             // Daily
             // 
             this.Daily.AutoSize = true;
-            this.Daily.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Daily.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Daily.ForeColor = System.Drawing.Color.LightCoral;
             this.Daily.Location = new System.Drawing.Point(19, 9);
             this.Daily.Name = "Daily";
-            this.Daily.Size = new System.Drawing.Size(112, 24);
+            this.Daily.Size = new System.Drawing.Size(110, 23);
             this.Daily.TabIndex = 0;
             this.Daily.Text = "Daily Sales";
             // 
@@ -282,11 +284,11 @@
             // Weekly
             // 
             this.Weekly.AutoSize = true;
-            this.Weekly.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Weekly.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Weekly.ForeColor = System.Drawing.Color.LightCoral;
             this.Weekly.Location = new System.Drawing.Point(19, 9);
             this.Weekly.Name = "Weekly";
-            this.Weekly.Size = new System.Drawing.Size(135, 24);
+            this.Weekly.Size = new System.Drawing.Size(131, 23);
             this.Weekly.TabIndex = 0;
             this.Weekly.Text = "Weekly Sales";
             // 
@@ -326,11 +328,11 @@
             // Monthly
             // 
             this.Monthly.AutoSize = true;
-            this.Monthly.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Monthly.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Monthly.ForeColor = System.Drawing.Color.LightCoral;
             this.Monthly.Location = new System.Drawing.Point(19, 9);
             this.Monthly.Name = "Monthly";
-            this.Monthly.Size = new System.Drawing.Size(140, 24);
+            this.Monthly.Size = new System.Drawing.Size(136, 23);
             this.Monthly.TabIndex = 0;
             this.Monthly.Text = "Monthly Sales";
             // 
@@ -370,11 +372,11 @@
             // Yearly
             // 
             this.Yearly.AutoSize = true;
-            this.Yearly.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Yearly.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Yearly.ForeColor = System.Drawing.Color.LightCoral;
             this.Yearly.Location = new System.Drawing.Point(19, 9);
             this.Yearly.Name = "Yearly";
-            this.Yearly.Size = new System.Drawing.Size(125, 24);
+            this.Yearly.Size = new System.Drawing.Size(122, 23);
             this.Yearly.TabIndex = 0;
             this.Yearly.Text = "Yearly Sales";
             // 
